@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulaire Ordonnance</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="main">
+				<div class="main-center">
+					<h5>Ordonnance</h5>
+					<form method="post" action="print.hmtl">
+						<div class="form-group">
+							<label for="lastename1">Nom du médecin traitant</label>
+							<div class="input-group">
+								<input type="text" class="form-control" id="lastename1"placeholder="Nom du médecin traitant"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="firstname1">Prénom du médecin traitant</label>
+							<div class="input-group">
+								<input type="text" class="form-control" id="firstname1" placeholder="Prénom du médecin traitant"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="phone">N° de téléphone</label>
+							<div class="input-group">
+								<input type="text" class="form-control" id="phone" placeholder="N° de téléphone"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="identification">N° d'identification</label>
+							<div class="input-group">
+								<input type="password" class="form-control" id="identification" placeholder="N° d'identification"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname2">Nom du patient</label>
+							<div class="input-group">
+								<input type="password" class="form-control" id="lastname2" placeholder="Nom du patient"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="firstname2">Prénom du patient</label>
+							<div class="input-group">
+								<input type="password" class="form-control" id="firstname2" placeholder="Prénom du patient"/>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col">
+								<div class="form-group">
+									<label for="exampleFormControlSelect1">Comprimé/jour</label>
+									<input type="password" class="form-control" id="cp" placeholder="Comprimé/jour"/>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<label for="exampleFormControlSelect1">Médicament</label>
+									<input type="password" class="form-control" id="md" placeholder="Médicament"/>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<label for="exampleFormControlSelect1">Durée</label>
+									<input type="password" class="form-control" id="dur" placeholder="Durée"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1">Corps de l'ordonnace</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" id="textarea"></textarea>
+						</div>
+						<input type="submit" class="btn btn-light" value="Imprimer" onClick="Add();" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	function Add(){
+		            var lastename1 = document.getElementById("lastename1").value;
+		            var firstname1 = document.getElementById("firstname1").value;
+		            var phone = document.getElementById("phone").value;
+		            var identification = document.getElementById("identification").value;
+		            var lastname2 = document.getElementById("lastname2").value;
+		            var phone = document.getElementById("firstname2").value;
+		            var md = document.getElementById("md").value;
+		            var cp = document.getElementById("cp").value;
+		            var dur = document.getElementById("dur").value;
+		            var dur = document.getElementById("textarea").value;
+		            localStorage.setItem("textarea",textarea);
+		            localStorage.setItem("dur", dur);
+		            localStorage.setItem("cp", cp);
+		            localStorage.setItem("md", md);
+		            localStorage.setItem("firstname2", firstename2);
+		            localStorage.setItem("lastname2", lastname2);
+		            localStorage.setItem("identification", identification);
+		            localStorage.setItem("lastename1", lastename1);
+		            localStorage.setItem("firstname1", firstname1);
+					localStorage.setItem("phone", phone);
+		        
+	}
+</script>
+

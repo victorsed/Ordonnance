@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Ordonnance/title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
+  </head>
+
+  <body>
+    <main role="main" class="container">
+      <h1 class="mt-5">Ordonnance</h1>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><span id="lastename1"></span><span id="firstname1"></span></h5>
+          <h6 class="card-subtitle mb-2 text-muted">tel :<span id="phone"></span> N°:<span id="identification"></span></h6>
+          <p class="card-text"><span id="lastename2"></span> <span id="firstname2"></span></p>
+          <p class="card-text"><span id="cp"></span> Comprimé/J de <span id="md"></span> pendant <span id="dur"></span></p>
+          <p class="card-text" id="textarea">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<script>
+document.getElementById( 'textarea' ).appendChild(localStorage.setItem(textarea));
+document.getElementById( 'dur' ).appendChild(localStorage.setItem(dur));
+document.getElementById( 'cp' ).appendChild(localStorage.setItem(cp));
+document.getElementById( 'md' ).appendChild(localStorage.setItem(md));
+document.getElementById( 'lastename1' ).appendChild(localStorage.setItem(lastename1));
+document.getElementById( 'firstename1' ).appendChild(localStorage.setItem(firstename1));
+document.getElementById( 'identification' ).appendChild(localStorage.setItem(identification));
+document.getElementById( 'lastename2' ).appendChild(localStorage.setItem(lastename2));
+document.getElementById( 'firstename2' ).appendChild(localStorage.setItem(firstename2));
+document.getElementById( 'phone' ).appendChild(localStorage.setItem(phone));	   
+</script>
